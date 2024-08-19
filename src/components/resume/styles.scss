@@ -1,0 +1,66 @@
+.resume {
+  &-main {
+    animation: moviment 9s infinite ease-in-out;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    min-width: 200px;
+    height: fit-content;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 60px rgba(0, 128, 128, 0.2);
+  }
+  &-header {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgba(12, 12, 12, 0.3);
+    border-bottom: 1px solid rgba(23, 23, 23, 0.5);
+    svg:first-child {
+      margin: 0px 12px;
+    }
+    &-tab {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px;
+      width: 200px;
+      border-radius: 8px 8px 0px 0px;
+      background-color: rgb(14, 14, 14);
+      &-left {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      &-right {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  &-terminal {
+    padding: 12px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    &-user {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      color: aqua;
+    }
+    &-text {
+      padding: 12px;
+      text-align: left;
+      overflow: hidden;
+    }
+    &-command {
+      outline: none;
+      padding: 12px;
+      text-align: left;
+    }
+  }
+}
