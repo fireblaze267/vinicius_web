@@ -17,11 +17,11 @@ export default function Resume() {
         </div>
       </div>
       <div className="resume-terminal">
-        <div class="resume-terminal-user">
+        <div className="resume-terminal-user">
           <PersonCircle /> Vinicius on ˜
         </div>
 
-        <div class="resume-terminal-text">
+        <div className="resume-terminal-text">
           <label>
             Olá! Me chamo Vinicius, sou um desenvolvedor especializado em React
             e React Native, com sólida experiência na criação de aplicativos web
@@ -31,11 +31,11 @@ export default function Resume() {
           </label>
         </div>
 
-        <div class="resume-terminal-user">
+        <div className="resume-terminal-user">
           <PersonCircle /> Vinicius on ˜
         </div>
 
-        <div class="resume-terminal-text">
+        <div className="resume-terminal-text">
           <label>
             Ao longo dos anos, tenho trabalhado em diversos projetos, desde
             aplicativos corporativos até Paginas de divulgação. Minha paixão
@@ -46,11 +46,11 @@ export default function Resume() {
           </label>
         </div>
 
-        <div class="resume-terminal-user">
+        <div className="resume-terminal-user">
           <PersonCircle /> Vinicius on ˜
         </div>
 
-        <div class="resume-terminal-command" contenteditable="true"></div>
+        <div className="resume-terminal-command" contentEditable="true"></div>
       </div>
     </div>
   );

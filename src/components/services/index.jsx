@@ -14,13 +14,13 @@ export default function Services() {
         <h1>Meus Serviços</h1>
       </div>
 
-      <div class="services-content">
-        <div class="services-cards">
-          <div class="services-cards-title">
+      <div className="services-content">
+        <div className="services-cards">
+          <div className="services-cards-title">
             <CodeSquare />
             <span>Desenvolvimento de sites</span>
           </div>
-          <div class="services-cards-text">
+          <div className="services-cards-text">
             <p>
               Crie um site sob medida para suas necessidades, com design
               profissional e alta performance.
@@ -28,12 +28,12 @@ export default function Services() {
           </div>
         </div>
 
-        <div class="services-cards">
-          <div class="services-cards-title">
+        <div className="services-cards">
+          <div className="services-cards-title">
             <WindowFullscreen />
             <span>Prototipação</span>
           </div>
-          <div class="services-cards-text">
+          <div className="services-cards-text">
             <p>
               Visualize seu projeto antes de começar a construir, com protótipos
               interativos e fiéis à ideia final.
@@ -41,12 +41,12 @@ export default function Services() {
           </div>
         </div>
 
-        <div class="services-cards">
-          <div class="services-cards-title">
+        <div className="services-cards">
+          <div className="services-cards-title">
             <Wordpress />
             <span>Wordpress</span>
           </div>
-          <div class="services-cards-text">
+          <div className="services-cards-text">
             <p>
               Domine o CMS mais popular do mundo e tenha um site fácil de
               gerenciar e atualizar.

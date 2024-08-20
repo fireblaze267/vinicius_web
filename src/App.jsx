@@ -1,5 +1,6 @@
 import "./app.scss";
 import Navbar from "./components/navbar";
+import Projects from "./components/projects";
 import Resume from "./components/resume";
 import Services from "./components/services";
 
@@ -11,6 +12,7 @@ function App() {
         <Resume />
         <Services />
       </div>
+      <Projects />
     </div>
   );
 }
