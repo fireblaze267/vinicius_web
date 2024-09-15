@@ -1,0 +1,67 @@
+.tech {
+  &-main {
+    display: flex;
+    align-self: center;
+    gap: 1rem;
+    width: 95%;
+    border-radius: 12px;
+    padding: 2rem;
+    background: rgba(12, 12, 12, 0.22);
+  }
+  &-desc {
+    text-align: left;
+    width: 50%;
+    &-title {
+      border-bottom: 1px solid #a6a4a4;
+      padding: 1rem 0;
+      h1 {
+        font-size: 3em;
+        line-height: 1.1;
+      }
+    }
+    &-soft {
+      padding: 1rem 0;
+      h1 {
+        font-size: 20px;
+        margin-bottom: 1rem;
+      }
+      p {
+        display: flex;
+        align-items: center;
+        svg {
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+  &-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    row-gap: 1.2rem;
+    padding: 2rem;
+  }
+  &-item {
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 8rem;
+    padding: 1rem;
+    border-radius: 4px;
+    background: rgb(0, 128, 128);
+    svg {
+      background-color: rgba(12, 12, 12, 0.9);
+      padding: 0.5rem;
+      border-radius: 50%;
+      position: absolute;
+      left: -12px;
+      top: -12px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
