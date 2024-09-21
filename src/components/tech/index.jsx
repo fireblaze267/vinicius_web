@@ -1,35 +1,37 @@
 import { CaretRightFill } from "react-bootstrap-icons";
+import { FaNodeJs, FaWordpress } from "react-icons/fa";
+import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact } from "react-icons/fa6";
 import "./styles.scss";
 
 export default function Tech() {
   const techOptions = [
     {
       title: "React",
-      icon: "",
+      icon: <FaReact />,
     },
     {
       title: "Javascript",
-      icon: "",
+      icon: <FaJs />,
     },
     {
       title: "Node js",
-      icon: "",
+      icon: <FaNodeJs />,
     },
     {
       title: "Wordpress",
-      icon: "",
+      icon: <FaWordpress />,
     },
     {
       title: "Figma",
-      icon: "",
+      icon: <FaFigma />,
     },
     {
       title: "HTML 5",
-      icon: "",
+      icon: <FaHtml5 />,
     },
     {
       title: "CSS 3",
-      icon: "",
+      icon: <FaCss3 />,
     },
   ];
 

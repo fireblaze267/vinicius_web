@@ -65,3 +65,25 @@
     }
   }
 }
+
+@media (max-width: 920px) {
+  .tech-main {
+    flex-direction: column;
+
+    padding: 1rem 0.2rem;
+  }
+  .tech-container {
+    justify-content: center;
+    align-items: center;
+  }
+  .tech-item {
+    width: 10rem;
+    svg {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  .tech-desc {
+    margin-left: 2rem;
+  }
+}
