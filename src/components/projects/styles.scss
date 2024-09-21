@@ -84,7 +84,8 @@
         position: relative;
         width: 100%;
         height: max-content;
-        img {
+        &-image {
+          animation: showUpNew 1.2s ease;
           width: 100%;
           height: auto;
           object-fit: cover;
@@ -115,5 +116,21 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 920px) {
+  .projects-container-menu-tabs {
+    padding: 1.2rem;
+    text-align: center;
+  }
+}
+
+@keyframes showUpNew {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

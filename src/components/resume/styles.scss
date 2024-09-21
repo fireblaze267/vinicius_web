@@ -69,9 +69,11 @@
   }
 }
 
-@media (max-width: 920px) {
-  .projects-container-menu-tabs {
-    padding: 1.2rem;
-    text-align: center;
+@media (max-width: 650px) {
+  .resume-main {
+    width: auto;
+  }
+  .resume-terminal-text {
+    font-size: 15px;
   }
 }

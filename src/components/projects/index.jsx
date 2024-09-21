@@ -34,6 +34,7 @@ export default function Projects() {
         <div className="projects-container-content">
           <div className="projects-container-content-card">
             <img
+              className="projects-container-content-card-image"
               src={options[selectOption].img}
               alt={options[selectOption].title}
             />

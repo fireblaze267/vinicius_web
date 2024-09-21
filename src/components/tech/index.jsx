@@ -40,7 +40,7 @@ export default function Tech() {
           <h1>Habilidades</h1>
           <p>Soluções web inovadoras e de alta qualidade.</p>
         </div>
-        <div class="tech-desc-soft">
+        <div className="tech-desc-soft">
           <h1>Soft skills</h1>
           <p>
             <CaretRightFill /> Resolução
@@ -55,7 +55,7 @@ export default function Tech() {
           </p>
         </div>
       </div>
-      <div class="tech-container">
+      <div className="tech-container">
         {techOptions.map((x, idx) => {
           return (
             <div key={idx} className="tech-item">
