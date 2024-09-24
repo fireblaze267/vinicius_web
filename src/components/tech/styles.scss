@@ -7,6 +7,7 @@
     border-radius: 12px;
     padding: 2rem;
     background: rgba(12, 12, 12, 0.22);
+    margin-top: 11vw;
   }
   &-desc {
     text-align: left;
@@ -55,6 +56,7 @@
     background: rgb(0, 128, 128);
     svg {
       background-color: rgba(12, 12, 12, 0.9);
+      border: 1px solid transparent;
       padding: 0.5rem;
       border-radius: 50%;
       position: absolute;
@@ -63,12 +65,20 @@
       width: 40px;
       height: 40px;
     }
+    &:hover {
+      transform: translateY(-10px);
+      cursor: pointer;
+      svg {
+        border-color: #a6a4a4;
+      }
+    }
   }
 }
 
 @media (max-width: 920px) {
   .tech-main {
     flex-direction: column;
+    margin-top: 35vw;
 
     padding: 1rem 0.2rem;
   }

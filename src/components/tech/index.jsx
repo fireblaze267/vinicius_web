@@ -8,30 +8,37 @@ export default function Tech() {
     {
       title: "React",
       icon: <FaReact />,
+      color: "blue",
     },
     {
       title: "Javascript",
       icon: <FaJs />,
+      color: "fcba03",
     },
     {
       title: "Node js",
       icon: <FaNodeJs />,
+      color: "109010",
     },
     {
       title: "Wordpress",
       icon: <FaWordpress />,
+      color: "5353ec",
     },
     {
       title: "Figma",
       icon: <FaFigma />,
+      color: "f33a6a",
     },
     {
       title: "HTML 5",
       icon: <FaHtml5 />,
+      color: "ffa500",
     },
     {
       title: "CSS 3",
       icon: <FaCss3 />,
+      color: "5353ec",
     },
   ];
 
@@ -60,8 +67,8 @@ export default function Tech() {
       <div className="tech-container">
         {techOptions.map((x, idx) => {
           return (
-            <div key={idx} className="tech-item">
-              <label>{x?.title}</label>
+            <div key={idx} className={`tech-item tech-${x.color}`}>
+              <span>{x?.title}</span>
               {x.icon}
             </div>
           );

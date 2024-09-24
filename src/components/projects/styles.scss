@@ -75,22 +75,43 @@
             rgb(0, 128, 128) 0%,
             rgb(5, 193, 193) 100%
           );
+          ::after {
+            animation: loadBar 5s ease-in-out;
+            display: flex;
+            content: "";
+            background-color: #ffffff;
+            width: 100%;
+            height: 2px;
+            overflow: hidden;
+            -webkit-transition: width 1s ease-in-out;
+            -moz-transition: width 1s ease-in-out;
+            -o-transition: width 1s ease-in-out;
+            transition: width 1s ease-in-out;
+          }
         }
       }
     }
     &-content {
       width: 100%;
+      position: relative;
       &-card {
         position: relative;
         width: 100%;
         height: max-content;
         &-image {
-          animation: showUpNew 1.2s ease;
+          left: 0;
+          top: 0;
+          position: absolute;
           width: 100%;
+          float: left;
+          overflow: hidden;
           height: auto;
           object-fit: cover;
           object-position: left;
           border-radius: 12px;
+          img {
+            object-fit: cover;
+          }
         }
       }
       &-text {
@@ -100,19 +121,21 @@
         width: 20em;
         border-radius: 8px;
         padding: 0.8rem;
-        position: absolute;
-        bottom: 2%;
-        left: 1%;
         height: fit-content;
-        background-color: rgba(61, 61, 61, 0.9);
+        background-color: rgb(0, 122, 122);
+        color: #fdfdfd;
+        margin-top: 1rem;
+        z-index: 150;
         h1 {
           font-size: 28px;
         }
-        p {
+        span {
           margin-bottom: 1.2rem;
+          text-wrap: wrap;
         }
         button {
           width: 10rem;
+          background-color: #3d3d3d;
         }
       }
     }
@@ -120,9 +143,20 @@
 }
 
 @media (max-width: 920px) {
-  .projects-container-menu-tabs {
+  div.projects-container-menu {
+    overflow: auto;
+    padding: 1rem;
+  }
+  .projects-container-menu-tabs,
+  .projects-container-menu-tabs-active {
     padding: 1.2rem;
-    text-align: center;
+  }
+  .projects-container-content-text {
+    display: none;
+  }
+  .projects-container-content-text-mobile {
+    opacity: 1;
+    z-index: 150;
   }
 }
 
@@ -132,5 +166,14 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes loadBar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
   }
 }

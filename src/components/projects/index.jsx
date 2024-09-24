@@ -1,10 +1,35 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Collection } from "react-bootstrap-icons";
 import { options } from "./options";
 import "./styles.scss";
 
 export default function Projects() {
   const [selectOption, setSelectOption] = useState(0);
+  const [userClick, setUserClick] = useState(false);
+
+  useEffect(() => {
+    var timeID = setTimeout(() => {
+      handleMenu();
+    }, 5000);
+
+    if (userClick) {
+      clearTimeout(timeID);
+      var userTime = setTimeout(() => {
+        setUserClick(false);
+      }, 8000);
+    } else if (userTime) {
+      clearTimeout(userTime);
+      userTime = setTimeout(() => {
+        setUserClick(false);
+      }, 8000);
+    }
+  }, [selectOption, userClick]);
+
+  function handleMenu() {
+    let idx = options.length - 1;
+
+    setSelectOption(selectOption == idx ? 0 : selectOption + 1);
+  }
 
   return (
     <div className="projects-main">
@@ -18,7 +43,9 @@ export default function Projects() {
           {options.map((x, idx) => {
             return (
               <div
-                onClick={() => setSelectOption(x.key)}
+                onClick={() => {
+                  setSelectOption(x.key), setUserClick(true);
+                }}
                 key={idx}
                 className={
                   selectOption === x.key
@@ -30,20 +57,34 @@ export default function Projects() {
               </div>
             );
           })}
+
+          <div className="projects-container-content-text">
+            <h1>{options[selectOption].title}</h1>
+            <span>{options[selectOption].text}</span>
+            <button>Visualizar</button>
+          </div>
         </div>
         <div className="projects-container-content">
           <div className="projects-container-content-card">
-            <img
-              className="projects-container-content-card-image"
-              src={options[selectOption].img}
-              alt={options[selectOption].title}
-            />
-
-            <div className="projects-container-content-text">
-              <h1>{options[selectOption].title}</h1>
-              <p>{options[selectOption].text}</p>
-              <button>Visualizar</button>
-            </div>
+            {options.map(({ img, title, key }) => {
+              return (
+                <img
+                  key={key}
+                  loading="lazy"
+                  className="projects-container-content-card-image"
+                  src={img}
+                  alt={title}
+                  style={
+                    key === selectOption
+                      ? {
+                          zIndex: 100,
+                          animation: "showUpNew 0.6s",
+                        }
+                      : { zIndex: 0, opacity: 0 }
+                  }
+                />
+              );
+            })}
           </div>
         </div>
       </div>
