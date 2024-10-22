@@ -10,7 +10,7 @@ export const options = [
     text: "Projeto clone do overwatch: tela de seleção do overwatch",
     img: overwatch_clone,
   },
-  { key: 1, title: "Only Notes", text: "", img: only_notes },
-  { key: 2, title: "HDF", text: "", img: hdf },
-  { key: 3, title: "Codeby", text: "", img: codeby },
+  { key: 1, title: "Only Notes", text: "Site de notas com design simples e morderno", img: only_notes },
+  { key: 2, title: "HDF", text: "Projeto pessoal para mostrar letras de musica", img: hdf },
+  { key: 3, title: "Codeby", text: "Processo seletivo : codeby  ", img: codeby },
 ];

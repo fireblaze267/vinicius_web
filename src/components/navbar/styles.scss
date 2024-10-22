@@ -38,6 +38,29 @@
     &-item {
       display: flex;
       align-items: center;
+      justify-content: center;
+      position: relative;
+      &::after {
+        transition: all ease-out 0.5s;
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        z-index: -10;
+        border: 1px solid transparent;
+      }
+      &:hover {
+        cursor: pointer;
+        &::after {
+          background-color: #202020;
+          border-color: #008080;
+        }
+      }
     }
   }
 }

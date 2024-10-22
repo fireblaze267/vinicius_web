@@ -7,7 +7,6 @@
     border-radius: 12px;
     padding: 2rem;
     background: rgba(12, 12, 12, 0.22);
-    margin-top: 11vw;
   }
   &-desc {
     text-align: left;
@@ -58,7 +57,7 @@
       background-color: rgba(12, 12, 12, 0.9);
       border: 1px solid transparent;
       padding: 0.5rem;
-      border-radius: 50%;
+      border-radius: 45%;
       position: absolute;
       left: -12px;
       top: -12px;
@@ -78,7 +77,6 @@
 @media (max-width: 920px) {
   .tech-main {
     flex-direction: column;
-    margin-top: 35vw;
 
     padding: 1rem 0.2rem;
   }

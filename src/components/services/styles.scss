@@ -74,25 +74,4 @@
   }
 }
 
-@media (max-width: 920px) {
-  .projects-container-menu {
-    flex-direction: row;
-    overflow-x: scroll;
-    overflow: -moz-scrollbars-vertical;
-    width: 100%;
-    height: fit-content;
-  }
-  .projects-gradient {
-    --size: 28em;
-  }
-  .projects-container {
-    flex-direction: column;
-  }
 
-  .projects-container-content-text {
-    position: static;
-    gap: 2rem;
-    background-color: rgba(61, 61, 61, 0.7);
-    width: 100%;
-  }
-}

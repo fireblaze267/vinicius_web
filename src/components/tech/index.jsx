@@ -1,10 +1,22 @@
 import { CaretRightFill } from "react-bootstrap-icons";
 import { FaNodeJs, FaWordpress } from "react-icons/fa";
-import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact } from "react-icons/fa6";
+import {
+  FaCss3,
+  FaFigma,
+  FaHtml5,
+  FaJs,
+  FaReact,
+  FaWindows,
+} from "react-icons/fa6";
 import "./styles.scss";
 
 export default function Tech() {
   const techOptions = [
+    {
+      title: "React",
+      icon: <FaReact />,
+      color: "blue",
+    },
     {
       title: "React",
       icon: <FaReact />,
@@ -19,6 +31,11 @@ export default function Tech() {
       title: "Node js",
       icon: <FaNodeJs />,
       color: "109010",
+    },
+    {
+      title: "Windows",
+      icon: <FaWindows />,
+      color: "blue",
     },
     {
       title: "Wordpress",
