@@ -66,6 +66,7 @@
     }
     &:hover {
       transform: translateY(-10px);
+      border-color: unset;
       cursor: pointer;
       svg {
         border-color: #a6a4a4;

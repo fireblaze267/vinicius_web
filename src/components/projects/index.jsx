@@ -1,11 +1,8 @@
-import { useState } from "react";
-import { Link } from "react-bootstrap-icons";
+import { Github, Link } from "react-bootstrap-icons";
 import { options } from "./options";
 import "./styles.scss";
 
 export default function Projects() {
-  const [selectOption, setSelectOption] = useState(0);
-
   function handleLink(link) {
     window.open(link);
   }
@@ -14,8 +11,12 @@ export default function Projects() {
     <div className="projects-main">
       <div className="projects-container">
         <div className="projects-text">
-          <h1>Projetos</h1>
-          <p>Amostra de texto para debug</p>
+          <h1>
+            Projetos
+            <Github
+              onClick={() => handleLink("https://github.com/fireblaze267")}
+            />
+          </h1>
         </div>
         <div className="projects-display">
           {options.map((x) => {
@@ -23,7 +24,7 @@ export default function Projects() {
               <div key={x?.key} className="projects-card">
                 <div className="projects-card-img">
                   <img src={x?.img} alt="degub" />
-                  <Link onClick={() => handleLink(x?.img)} />
+                  <Link onClick={() => handleLink(x?.link)} />
                 </div>
                 <div className="projects-card-text">
                   <h1>{x?.title}</h1>

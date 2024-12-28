@@ -1,4 +1,5 @@
-import { Git, Github, Linkedin } from "react-bootstrap-icons";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa6";
 import "./styles.scss";
 
 export default function Navbar() {
@@ -11,15 +12,15 @@ export default function Navbar() {
 
       <div className="nav-links">
         <div className="nav-links-item">
-          <Linkedin width={25} height={25} />
+          <FaLinkedin width={25} height={25} />
         </div>
 
         <div className="nav-links-item">
-          <Github width={25} height={25} />
+          <FaGithub width={25} height={25} />
         </div>
 
         <div className="nav-links-item">
-          <Git width={25} height={25} />
+          <FaGitAlt width={25} height={25} />
         </div>
       </div>
     </nav>

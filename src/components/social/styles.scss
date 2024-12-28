@@ -1,0 +1,45 @@
+.social {
+  &-main {
+    display: flex;
+    place-content: center;
+    width: 100%;
+    margin: 2rem 0rem;
+    padding: 1rem;
+  }
+  &-content {
+    display: flex;
+    width: 75%;
+    padding: 12px;
+    background-color: #232323;
+    border-radius: 25px;
+  }
+  &-img {
+    width: 50%;
+    padding: 10px;
+    background-color: azure;
+  }
+  &-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 50%;
+  }
+  &-item {
+    display: flex;
+    align-items: center;
+    background-color: #343436;
+    padding: 8px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+    &:hover {
+      border-color: purple;
+      cursor: pointer;
+    }
+  }
+}
