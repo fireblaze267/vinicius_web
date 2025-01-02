@@ -1,4 +1,4 @@
-import { Github, Link } from "react-bootstrap-icons";
+import { BsGithub, BsLink } from "react-icons/bs";
 import { options } from "./options";
 import "./styles.scss";
 
@@ -13,7 +13,7 @@ export default function Projects() {
         <div className="projects-text">
           <h1>
             Projetos
-            <Github
+            <BsGithub
               onClick={() => handleLink("https://github.com/fireblaze267")}
             />
           </h1>
@@ -24,7 +24,7 @@ export default function Projects() {
               <div key={x?.key} className="projects-card">
                 <div className="projects-card-img">
                   <img src={x?.img} alt="degub" />
-                  <Link onClick={() => handleLink(x?.link)} />
+                  <BsLink onClick={() => handleLink(x?.link)} />
                 </div>
                 <div className="projects-card-text">
                   <h1>{x?.title}</h1>

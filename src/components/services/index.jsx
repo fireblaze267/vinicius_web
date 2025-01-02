@@ -1,23 +1,23 @@
 import {
-  CodeSquare,
-  GearFill,
-  WindowFullscreen,
-  Wordpress,
-} from "react-bootstrap-icons";
+  BsCodeSquare,
+  BsGearFill,
+  BsWindowFullscreen,
+  BsWordpress,
+} from "react-icons/bs";
 import "./styles.scss";
 
 export default function Services() {
   return (
     <div className="services-main">
       <div className="services-title">
-        <GearFill />
+        <BsGearFill />
         <h1>Meus Serviços</h1>
       </div>
 
       <div className="services-content">
         <div className="services-cards">
           <div className="services-cards-title">
-            <CodeSquare />
+            <BsCodeSquare />
             <span>Desenvolvimento de sites</span>
           </div>
           <div className="services-cards-text">
@@ -30,7 +30,7 @@ export default function Services() {
 
         <div className="services-cards">
           <div className="services-cards-title">
-            <WindowFullscreen />
+            <BsWindowFullscreen />
             <span>Prototipação</span>
           </div>
           <div className="services-cards-text">
@@ -43,7 +43,7 @@ export default function Services() {
 
         <div className="services-cards">
           <div className="services-cards-title">
-            <Wordpress />
+            <BsWordpress />
             <span>Wordpress</span>
           </div>
           <div className="services-cards-text">

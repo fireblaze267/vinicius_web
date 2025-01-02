@@ -1,24 +1,24 @@
-import { PersonCircle, Shield, Terminal, X } from "react-bootstrap-icons";
+import { BsPersonCircle, BsShield, BsTerminal, BsX } from "react-icons/bs";
 import "./styles.scss";
 
 export default function Resume() {
   return (
     <div className="resume-main">
       <div className="resume-header">
-        <Shield />
+        <BsShield />
         <div className="resume-header-tab">
           <div className="resume-header-tab-left">
-            <Terminal />
+            <BsTerminal />
             PowerShell
           </div>
           <div className="resume-header-tab-right">
-            <X width={20} height={20} />
+            <BsX width={20} height={20} />
           </div>
         </div>
       </div>
       <div className="resume-terminal">
         <div className="resume-terminal-user">
-          <PersonCircle /> Vinicius on ˜
+          <BsPersonCircle /> Vinicius on ˜
         </div>
 
         <div className="resume-terminal-text">
@@ -32,7 +32,7 @@ export default function Resume() {
         </div>
 
         <div className="resume-terminal-user">
-          <PersonCircle /> Vinicius on ˜
+          <BsPersonCircle /> Vinicius on ˜
         </div>
 
         <div className="resume-terminal-text">
@@ -47,7 +47,7 @@ export default function Resume() {
         </div>
 
         <div className="resume-terminal-user">
-          <PersonCircle /> Vinicius on ˜
+          <BsPersonCircle /> Vinicius on ˜
         </div>
 
         <div className="resume-terminal-command" contentEditable="true"></div>

@@ -1,4 +1,4 @@
-import { CaretRightFill } from "react-bootstrap-icons";
+import { BsCaretRightFill } from "react-icons/bs";
 import { FaNodeJs, FaPython, FaWordpress } from "react-icons/fa";
 import {
   FaCss3,
@@ -60,14 +60,14 @@ export default function Tech() {
         <div className="tech-desc-soft">
           <h1>Soft skills</h1>
           <p>
-            <CaretRightFill /> Resolução
+            <BsCaretRightFill /> Resolução
           </p>
           <p>
-            <CaretRightFill />
+            <BsCaretRightFill />
             Adaptabilidade
           </p>
           <p>
-            <CaretRightFill />
+            <BsCaretRightFill />
             Autodidatismo
           </p>
         </div>
