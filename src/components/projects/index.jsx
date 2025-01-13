@@ -12,10 +12,10 @@ export default function Projects() {
       <div className="projects-container">
         <div className="projects-text">
           <h1>
-            Projetos
             <BsGithub
               onClick={() => handleLink("https://github.com/fireblaze267")}
             />
+            Projetos
           </h1>
         </div>
         <div className="projects-display">

@@ -7,7 +7,7 @@ export default function Navbar() {
     <nav className="nav-main">
       <div className="nav-logo">
         <h1>Vinicius</h1>
-        <span>Web developer</span>
+        <span>Developer</span>
       </div>
 
       <div className="nav-links">
