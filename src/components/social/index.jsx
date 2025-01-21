@@ -32,12 +32,8 @@ export default function Social() {
         <div className="social-links">
           {social.map((x, idx) => {
             return (
-              <a href={x.link}>
-                <div
-                  key={idx}
-                  onClick={() => window.open(x.link)}
-                  className="social-item"
-                >
+              <a href={x.link} target="_blank">
+                <div key={idx} className="social-item">
                   {x.icon}
                 </div>
               </a>

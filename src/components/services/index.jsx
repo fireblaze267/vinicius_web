@@ -1,5 +1,6 @@
 import {
   BsCodeSquare,
+  BsFillBarChartFill,
   BsGearFill,
   BsWindowFullscreen,
   BsWordpress,
@@ -50,6 +51,19 @@ export default function Services() {
             <p>
               Domine o CMS mais popular do mundo e tenha um site fácil de
               gerenciar e atualizar.
+            </p>
+          </div>
+        </div>
+
+        <div className="services-cards">
+          <div className="services-cards-title">
+            <BsFillBarChartFill />
+            <span>Consutoria em TI</span>
+          </div>
+          <div className="services-cards-text">
+            <p>
+              Impulsione seu negócio com soluções personalizadas de TI:
+              eficiência, inovação.
             </p>
           </div>
         </div>
