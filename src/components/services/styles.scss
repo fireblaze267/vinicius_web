@@ -9,6 +9,11 @@
     padding: 0 4rem;
     height: 100%;
   }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
   &-title {
     width: 100%;
     display: flex;
@@ -40,6 +45,7 @@
     width: 100%;
     min-height: fit-content;
     padding: 0.5rem;
+    background-color: #333333;
     border-radius: 12px;
     border: 1px solid transparent;
     &:hover {
