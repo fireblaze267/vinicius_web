@@ -1,8 +1,55 @@
-# React + Vite
+# Vinicius_web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Currículo interativo desenvolvido em React, apresentando informações profissionais, habilidades, experiências e formação acadêmica de forma moderna, responsiva e dinâmica.
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Visualização de currículo em formato interativo
+- Seção de projetos com links para demonstrações
+- Exibição de habilidades técnicas e soft skills
+- Serviços oferecidos
+- Links para redes sociais e contato
+
+## 🚀 Tecnologias Utilizadas
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Sass](https://sass-lang.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+
+## 📦 Instalação
+
+1. Clone o repositório:
+   ```sh
+   git clone https://github.com/fireblaze267/vinicius_web.git
+   ```
+2. Instale as dependências:
+   ```sh
+   npm install
+   ```
+3. Inicie o servidor de desenvolvimento:
+   ```sh
+   npm run dev
+   ```
+
+## 📄 Estrutura do Projeto
+
+```
+src/
+  components/
+    navbar/
+    projects/
+    resume/
+    services/
+    social/
+    tech/
+  assets/
+  App.jsx
+  main.jsx
+  app.scss
+```
+
+## 👨‍💻 Sobre
+
+Desenvolvido por [Vinicius Gama](https://www.linkedin.com/in/vinicius-gama/).  
+Entre em contato para colaborações ou oportunidades!

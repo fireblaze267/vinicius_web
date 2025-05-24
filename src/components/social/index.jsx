@@ -25,8 +25,7 @@ export default function Social() {
           <p>
             Estou sempre aberto a novos desafios e colaborações emocionantes. Se
             você está procurando um desenvolvedor React ou React Native para
-            trazer sua ideia à vida, ficarei feliz em contribuir com minha
-            expertise e habilidades técnicas.
+            trazer sua ideia à vida, ficarei feliz em contribuir.
           </p>
         </div>
         <div className="social-links">
