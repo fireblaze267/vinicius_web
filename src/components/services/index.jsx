@@ -2,6 +2,7 @@ import {
   BsCodeSquare,
   BsFillBarChartFill,
   BsGearFill,
+  BsServer,
   BsWindowFullscreen,
   BsWordpress,
 } from "react-icons/bs";
@@ -26,6 +27,16 @@ export default function Services() {
               Crie um site sob medida para suas necessidades, com design
               profissional e alta performance.
             </p>
+          </div>
+        </div>
+
+        <div className="services-cards">
+          <div className="services-cards-title">
+            <BsServer />
+            <span>Desenvolvimento Back-end</span>
+          </div>
+          <div className="services-cards-text">
+            <p>Construção de APIs robustas e escaláveis.</p>
           </div>
         </div>
 
@@ -58,7 +69,7 @@ export default function Services() {
         <div className="services-cards">
           <div className="services-cards-title">
             <BsFillBarChartFill />
-            <span>Consutoria em TI</span>
+            <span>Consultoria em TI</span>
           </div>
           <div className="services-cards-text">
             <p>

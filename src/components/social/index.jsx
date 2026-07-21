@@ -31,10 +31,8 @@ export default function Social() {
         <div className="social-links">
           {social.map((x, idx) => {
             return (
-              <a href={x.link} target="_blank">
-                <div key={idx} className="social-item">
-                  {x.icon}
-                </div>
+              <a key={idx + x.link.slice(0, 5)} href={x.link} target="_blank">
+                <div className="social-item">{x.icon}</div>
               </a>
             );
           })}

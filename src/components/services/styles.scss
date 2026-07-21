@@ -6,7 +6,7 @@
     align-items: center;
     width: 50%;
     border-radius: 12px;
-    padding: 0 4rem;
+    padding: 0 3.5rem;
     height: 100%;
   }
   &-content {
@@ -83,6 +83,7 @@
 @media (max-width: 800px) {
   .services-main {
     width: 100%;
+    padding: 0 1.5rem;
   }
 }
 

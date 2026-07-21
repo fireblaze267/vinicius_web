@@ -1,5 +1,13 @@
 import { BsCaretRightFill } from "react-icons/bs";
-import { FaNodeJs, FaPython, FaWordpress } from "react-icons/fa";
+import { DiMongodb, DiPostgresql } from "react-icons/di";
+import {
+  FaAws,
+  FaJoomla,
+  FaLinux,
+  FaNodeJs,
+  FaPython,
+  FaWordpress,
+} from "react-icons/fa";
 import {
   FaCss3,
   FaFigma,
@@ -8,45 +16,94 @@ import {
   FaReact,
   FaWindows,
 } from "react-icons/fa6";
+import { SiMysql, SiSpringboot } from "react-icons/si";
 import "./styles.scss";
 
 export default function Tech() {
   const techOptions = [
     {
-      title: "React",
-      icon: <FaReact />,
+      divTitle: "Frontend",
+      values: [
+        {
+          title: "React",
+          icon: <FaReact />,
+        },
+        {
+          title: "React Native",
+          icon: <FaReact />,
+        },
+        {
+          title: "Javascript",
+          icon: <FaJs />,
+        },
+        {
+          title: "HTML 5",
+          icon: <FaHtml5 />,
+        },
+        {
+          title: "CSS 3",
+          icon: <FaCss3 />,
+        },
+        {
+          title: "Figma",
+          icon: <FaFigma />,
+        },
+      ],
     },
     {
-      title: "Javascript",
-      icon: <FaJs />,
+      divTitle: "Backend",
+      values: [
+        {
+          title: "Node js",
+          icon: <FaNodeJs />,
+        },
+        {
+          title: "Springboot",
+          icon: <SiSpringboot />,
+        },
+      ],
     },
     {
-      title: "Node js",
-      icon: <FaNodeJs />,
+      divTitle: "Database",
+      values: [
+        { title: "Mysql", icon: <SiMysql /> },
+        { title: "Postgress", icon: <DiPostgresql /> },
+        { title: "MongoDB", icon: <DiMongodb /> },
+      ],
     },
     {
-      title: "Python",
-      icon: <FaPython />,
+      divTitle: "Cloud",
+      values: [
+        {
+          title: "AWS",
+          icon: <FaAws />,
+        },
+      ],
     },
     {
-      title: "Wordpress",
-      icon: <FaWordpress />,
-    },
-    {
-      title: "Figma",
-      icon: <FaFigma />,
-    },
-    {
-      title: "HTML 5",
-      icon: <FaHtml5 />,
-    },
-    {
-      title: "CSS 3",
-      icon: <FaCss3 />,
-    },
-    {
-      title: "Windows",
-      icon: <FaWindows />,
+      divTitle: "Diversos",
+      values: [
+        {
+          title: "Python",
+          icon: <FaPython />,
+        },
+        {
+          title: "Wordpress",
+          icon: <FaWordpress />,
+        },
+        {
+          title: "Joomla",
+          icon: <FaJoomla />,
+        },
+        {
+          title: "Windows",
+          icon: <FaWindows />,
+        },
+        {
+          title: "Linux",
+          icon: <FaLinux />,
+        },
+      ],
     },
   ];
 
@@ -55,29 +112,44 @@ export default function Tech() {
       <div className="tech-desc">
         <div className="tech-desc-title">
           <h1>Habilidades</h1>
-          <p>Soluções web inovadoras e de alta qualidade.</p>
         </div>
         <div className="tech-desc-soft">
           <h1>Soft skills</h1>
+          <h3>Resolução</h3>
           <p>
-            <BsCaretRightFill /> Resolução
+            <BsCaretRightFill /> Foco em identificar a raiz dos problemas e
+            propor soluções eficientes, transformando desafios técnicos em
+            resultados práticos.
           </p>
+          <h3>Adaptabilidade</h3>
           <p>
-            <BsCaretRightFill />
-            Adaptabilidade
+            <BsCaretRightFill /> Facilidade para me ajustar a diferentes
+            contextos, equipes e tecnologias, mantendo a produtividade mesmo
+            diante de mudanças constantes.
           </p>
+          <h3>Autodidatismo</h3>
           <p>
-            <BsCaretRightFill />
-            Autodidatismo
+            <BsCaretRightFill /> Busca constante por conhecimento por conta
+            própria, acompanhando novidades do mercado e aprendendo novas
+            tecnologias sem depender de supervisão.
           </p>
         </div>
       </div>
       <div className="tech-container">
         {techOptions.map((x, idx) => {
           return (
-            <div key={idx} className={`tech-item`}>
-              <span>{x?.title}</span>
-              {x.icon}
+            <div key={idx} className="tech-container-stack">
+              <h1>{x?.divTitle}</h1>
+              <div className="tech-item-container">
+                {x?.values.map((v) => {
+                  return (
+                    <div key={idx + v?.title} className="tech-item">
+                      <span>{v?.title}</span>
+                      {v?.icon}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           );
         })}

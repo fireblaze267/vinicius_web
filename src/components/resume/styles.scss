@@ -5,21 +5,22 @@
     z-index: 10;
     display: flex;
     flex-direction: column;
-    width: 600px;
-    min-width: 200px;
-    height: fit-content;
+    width: 500px;
+    min-width: 100px;
+    flex-basis: 50%;
     border-radius: 10px;
     box-shadow: 0 4px 60px rgba(0, 128, 128, 0.2);
   }
   &-header {
     display: flex;
     align-items: center;
+    gap: 0.05rem;
     padding-top: 8px;
     border-radius: 10px 10px 0px 0px;
     background-color: rgba(12, 12, 12, 0.3);
     border-bottom: 1px solid rgba(23, 23, 23, 0.5);
     svg:first-child {
-      margin: 0px 12px;
+      margin: 0px 8px;
     }
     &-tab {
       display: flex;
@@ -28,18 +29,22 @@
       padding: 8px;
       width: 200px;
       border-radius: 8px 8px 0px 0px;
-      background-color: rgb(14, 14, 14);
+      background-color: rgb(59, 59, 59);
+      &:nth-child(3) {
+        background-color: rgb(14, 14, 14);
+      }
       &-left {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 2px;
       }
       &-right {
         display: flex;
         align-items: center;
+        height: 100%;
         &:hover {
           cursor: pointer;
-          border-radius: 8px;
+          border-radius: 12px;
           background-color: rgb(45, 45, 45);
         }
       }
@@ -48,6 +53,7 @@
   &-terminal {
     padding: 12px 10px;
     display: flex;
+    gap: 0.2rem;
     flex-direction: column;
 
     &-user {
@@ -60,6 +66,9 @@
       padding: 12px;
       text-align: left;
       overflow: hidden;
+      span {
+        font-size: large;
+      }
     }
     &-command {
       outline: none;
@@ -69,11 +78,21 @@
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
   .resume-main {
-    width: auto;
+    flex-basis: 1;
+    width: 100%;
   }
   .resume-terminal-text {
     font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .resume-header-tab {
+    width: fit-content;
+    span {
+      display: none;
+    }
   }
 }
